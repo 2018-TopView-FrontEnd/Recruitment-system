@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 登陆 -->
+    <div id="contain">
+        <h1 class="login">Login</h1>
+        <form action method="POST" id="_form">
+            <input class="textInput" type="text" placeholder="Account">
+            <div class="alertDiv-six">该账号不存在</div>
+            <input class="pswInput" type="password" placeholder="Password">
+            <div class="alertDiv-seven">密码错误</div>
+            <div class="alertDiv-eight">密码不能为空</div>
+            <div class="remember"><input type="checkbox" checked="checked" id="checkInput">记住账号</div>
+            <div class="buttonDiv">
+                <button class="load" type="button">登陆</button>
+                <button class="register" type="button">进入注册</button>
+            </div>
+        </form>
+    </div>
+    <!-- 注册 -->
+    <div id="registerContain">
+        <h1 class="login">register</h1>
+        <form action="http://localhost:3000/form" method="POST" id="_RegisterForm">
+            <input class="textInput-Register" name="textInput-Register" type="text" placeholder="Account" title="请输入4-16位账号">
+            <div class="alertDiv-first">请输入4-16字母,数字的账号</div>
+            <input class="pswInput-Register" name="pswInput-Register" type="password" placeholder="Password" title="最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符">
+            <div class="alertDiv-second">两次密码输入不一样</div>
+            <div class="alertDiv-third">密码不能为空</div>
+            <div class="alertDiv-four">请输入正确格式的密码</div>
+            <input class="pswComfirm-Register" name="pswComfirm-Register" type="password" placeholder="Comfirm" title="请确定密码">
+            <input class="emaliInput" name="emaliInput" type="email" placeholder="email" title="请输入邮箱">
+            <div class="alertDiv-five">请输入正确的邮箱</div>
+            <div class="code">
+                <input type="text" class="codeInput" name="codeInput">
+                <img src="">
+            </div>
+        </form>
+        <div class="buttonDiv-Register">
+            <button class="load-Register" type="button">返回登陆</button>
+            <button class="register-Register" type="button">填写详细信息</button>
+        </div>
+
+    </div>
+    <!-- 表单 -->
+    <div id="message">
+        <h2 class="login">社团表单</h2>
+        <div class="alertDiv-night">请正确填写社团名称</div>
+        <div class="alertDiv-ten">请正确填写指导老师名字</div>
+        <div class="alertDiv-eleven">请正确填写负责人名字</div>
+        <div class="alertDiv-twelve">请正确填写负责人手机号码</div>
+        <div class="alertDiv-thirteen">请上传认证资料</div>
+        <form action="http://localhost:3000/form" method="POST" id="_MessageForm">
+            <table id="messageTable">
+                <tr>
+                    <td>社团名称</td>
+                    <td><input class="td-first" name="td-first" type="text" maxlength="20" title="请输入社团全称"></td>
+                </tr>
+                <tr>
+                    <td>指导老师</td>
+                    <td><input class="td-second" name="td-second" type="text" maxlength="10" title="请输入指导老师名称"></td>
+                </tr>
+                <tr>
+                    <td>负责人</td>
+                    <td><input class="td-third" name="td-third" type="text" maxlength="10" title="请输入负责人名称"></td>
+                </tr>
+                <tr>
+                    <td>手机号码</td>
+                    <td><input class="td-four" name="td-four" type="text" maxlength="11" title="请输入手机号码"></td>
+                </tr>
+                <tr>
+                    <td>所属单位</td>
+                    <td>
+                        <select name="major" required="required" class="majorSelect">
+                          <option value="校级">校级社团</option>
+                          <option value="机电工程学院">机电工程学院</option>
+                          <option value="自动化学院">自动化学院</option>
+                          <option value="轻工化工学院">轻工化工学院</option>
+                          <option value="信息工程学院">信息工程学院</option>
+                          <option value="土木与交通工程学院">土木与交通工程学院</option>
+                          <option value="计算机学院">计算机学院</option>
+                          <option value="材料与能源学院">材料与能源学院</option>
+                          <option value="环境科学与工程学院">环境科学与工程学院</option>
+                          <option value="外国语学院">外国语学院</option>
+                          <option value="物理与光电工程学院">物理与光电工程学院</option>
+                          <option value="管理学院">管理学院</option>
+                          <option value="应用数学学院">应用数学学院</option>
+                          <option value="政法学院">政法学院</option>
+                          <option value="经济与贸易学院">经济与贸易学院</option>
+                          <option value="建筑与城市规划学院">建筑与城市规划学院</option>
+                          <option value="艺术与设计学院">艺术与设计学院</option>
+                          <option value="继续教育学院">继续教育学院</option>
+                          <option value="学术类">学术类兴趣社团</option>
+                          <option value="人文类">人文类兴趣社团</option>
+                          <option value="体育类">体育类兴趣社团</option>
+                          <option value="娱乐类">娱乐类兴趣社团</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>上传认证</td>
+                    <td><input type="file" class="fileInput" name="fileInput"></td>
+                </tr>
+            </table>
+        </form>
+        <button class="successBun" type="submit">完成注册</button>
+    </div>
+    <script src="../JQ-src/jquery-3.3.1.js"></script>
+    <script src="load.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./photo/login_1.jpg");
+    background-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+.bodyClass {
+    background-image: url("./photo/login_3(1).jpg");
+    background-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+input[type~=text],
+input[type~=password],
+input[type~=email],
+button {
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+#contain,
+#registerContain,
+#message {
+    width: 300px;
+    height: 320px;
+    margin: auto;
+    /* position: absolute; */
+    /* border: 1px red solid; */
+}
+
+.login {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#_form,
+#_RegisterForm {
+    position: relative;
+    /* border: 1px red solid; */
+}
+
+.textInput,
+.pswInput,
+.textInput-Register,
+.pswInput-Register,
+.emaliInput,
+.pswComfirm-Register {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 10px 0;
+    background: rgba(241, 236, 236, 0.15);
+    box-shadow: 0 2px 3px 0 rgba(250, 250, 250, 0.1) inset;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.alertDiv-first,
+.alertDiv-second,
+.alertDiv-third,
+.alertDiv-four,
+.alertDiv-five,
+.alertDiv-six,
+.alertDiv-seven,
+.alertDiv-eight,
+.alertDiv-night,
+.alertDiv-ten,
+.alertDiv-ten,
+.alertDiv-eleven,
+.alertDiv-twelve,
+.alertDiv-thirteen {
+    width: 240px;
+    height: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    line-height: 30px;
+    display: none;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 18px;
+    background: rgb(20, 20, 20);
+    z-index: 2;
+    /* opacity: 0.7; */
+    border-radius: 6px;
+    /* border: 1px red solid; */
+    animation: slid 0.3s forwards;
+}
+
+@keyframes slid {
+    0% {
+        left: 48%;
+    }
+    20% {
+        left: 52%;
+    }
+    40% {
+        left: 48%;
+    }
+    60% {
+        left: 52%;
+    }
+    80% {
+        left: 48%;
+    }
+    100% {
+        left: 52%;
+    }
+}
+
+.remember {
+    margin: 10px 0;
+    position: relative;
+    text-align: start;
+}
+
+.buttonDiv,
+.buttonDiv-Register {
+    position: relative;
+}
+
+.load,
+.register,
+.load-Register,
+.register-Register {
+    width: 49%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+}
+
+.load,
+.load-Register {
+    background: #ff730e;
+    border: 1px #ff730e solid;
+}
+
+.register-Register,
+.register {
+    background: #86d8d4;
+    border: 1px #86d8d4 solid;
+}
+
+
+/* 注册表单的信息 */
+
+#registerContain {
+    display: none;
+    width: 300px;
+    height: 430px;
+    /* border: 1px red solid; */
+}
+
+
+/* .register-Add {
+    animation: move 1s forwards;
+    display: inline-block;
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 400px;
+    }
+    100% {
+        left: 100px
+    }
+} */
+
+.code {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    vertical-align: top;
+}
+
+.code input {
+    width: 48%;
+    height: 100%;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    background: transparent;
+    color: white;
+    /* border: 1px red solid; */
+}
+
+.code img {
+    width: 48%;
+    height: 100%;
+    display: inline-block;
+    /* border: 1px red solid; */
+}
+
+
+/* 详细信息的表单 */
+
+#message {
+    width: 360px;
+    height: 400px;
+    position: relative;
+    display: none;
+    /* border: 1px red solid; */
+}
+
+#message tr {
+    height: 50px;
+}
+
+#message td {
+    text-align: center;
+    padding: 8px;
+}
+
+#message input {
+    border-bottom: 1px rgb(238, 231, 231) solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: transparent;
+    color: white;
+}
+
+.successBun {
+    width: 180px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgb(105, 194, 134);
+    border: none;
+    position: relative;
+    margin: 0 auto;
+}
