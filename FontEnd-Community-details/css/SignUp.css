@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: Circular,Helvetica,Arial,sans-serif;
+}
+
+#SignUpOut {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* display: table; */
+}
+
+#SignUp {
+    display: inline-block;
+    position: relative;
+    margin-top: 200px;
+    width: 750px;
+    padding: 0 15px;
+}
+
+form span {
+    font-size: 1.1em;
+    font-family: '华文中宋';
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    position: relative;
+    box-sizing: content-box;
+}
+
+#SignUpBody {
+    position: relative;
+    max-width: 26.875em;
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center; 
+    background-color: white;
+    border-radius: 4px;
+}
+
+#SignUpBody strong {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#SignUpBody strong span {
+    position: relative;
+    background-color: white;
+    font-family: '仿宋';
+    font-size: 1.8em;
+    padding: 0 5px;
+    z-index: 1;
+}
+
+#SignUpBody strong::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 49%;
+    display: block;
+    z-index: 0;
+    border-bottom: 1px solid #7a7a7e;
+}
+
+#SignUpBody form input[type="text"], select,textarea{
+    width: 100%;
+    font-size: 0.9375em;
+    padding: 1em 0.75em 0.6875em;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    border: 1px solid #dfe0e6;
+    border-radius: 2px;
+    line-height: 1.6;
+    resize: none;
+}
+
+#SignUpBody form textarea {
+    overflow: visible;
+}
+
+#SignUpBody input[type="radio"] + label {
+    padding: 0 30px 0 10px;
+}
+
+select {
+    padding-bottom: 10px;
+}
+
+#SignUpBody input[type="radio"] {
+    margin: 10px 0;
+}
+
+::-webkit-input-placeholder {
+    font-size: 0.9em;
+}
+
+#SignUpBody form #submit {
+    width: 100%;
+    background-color: rgb(32, 212, 77);
+    border: 0px solid black;
+    margin-top: 15px;
+    box-shadow: 0px 0px 2px gray;
+    font-family: '微软雅黑';
+    font-size: 1em;
+    word-spacing: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    color: white; 
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    min-width: 160px;
+    transition: all 0.5s ease 0s;
+    outline: none;
+}
+
+#SignUpBody form #submit:hover {
+    background-color: rgb(62, 245, 78);
+}
+
+.tips {
+    position: absolute;
+    display: block;
+    padding: 0;
+    left: 105%;
+    margin-right: -150%;
+    top: 50%;
+    /* margin-left: 430px; */
+    transform: translate(0,-50%);
+    font-size: 0.9em;
+    font-family: '微软雅黑';
+    color: red;
+    display: none;
+}
+
+#tips::before {
+
+}
+
+#SignUpBody li > span.fakeLetter{
+    font-family: '黑体';
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    position: absolute;
+    margin-left: 0.82em;
+    margin-top: 0.95em;
+    color: #757579;
+    transform: translate(0,100%);
+    pointer-events: none;
+    transition: all 0.5s ease 0s;
+}
