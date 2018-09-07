@@ -1,0 +1,572 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+header{
+  height: 80px;
+  width: cale(100% - 200px);;
+  line-height: 80px;
+  border-bottom: 1px solid black;
+  background-color: #ffffff;
+  min-width: 1100px;
+  margin-left: 200px;
+}
+
+@media screen and (max-width:1100px) {
+  header{
+    height: 80px;
+    width: 1100px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    background-color: #ffffff;
+  }
+}
+
+aside{
+  width: 13%;
+  height: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  border-right: 1px solid black;
+  display: inline-block;
+  top:0;
+  position: absolute;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+img{
+  width: 20%;
+  height: 80px;
+}
+
+li{
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid rgba(214, 210, 210, 0.925);
+}
+
+section{
+  width: 100%;
+  height: 80%;
+  min-width: 1100px;
+  z-index: -1;
+}
+
+table{
+  width: 100%;
+  min-width: 1100px;
+  table-layout:fixed;
+  padding-top: 25px;
+}
+
+td{
+  overflow: auto;
+  word-break: break-all;
+}
+
+.list{
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid rgba(214, 210, 210, 0.925);
+  max-width: 200px;
+}
+
+.list > i{
+  font-size: 20px;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+
+.createAccountInput{
+  display:inline-block;
+  appearance: none;
+  border-bottom: 2px solid black;
+  width: 400px;
+  height: 50px;
+  background-color: #fafafa;
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.createAccountDiv{
+  width: 500px;
+  margin: auto;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+.createAccountLabel{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.createAccountSelect{
+  outline: none;
+  font-size: 20px;
+  appearance: none;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.createDepartmentDiv{
+  width: 500px;
+  margin: auto;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+.createDepartmentInput{
+  display:inline-block;
+  appearance: none;
+  border-bottom: 2px solid black;
+  width: 400px;
+  height: 50px;
+  background-color: #fafafa;
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.createDepartmentLabel{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.createDepartmentTextarea{
+  display: inline-block;
+  border: 2px solid black;
+  width: 400px;
+  height: 150px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  resize: none;
+}
+
+.deregistrationDepartmentMain{
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  height: 550px;
+  border: 8px double black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow-y: auto;
+}
+
+.deregistrationDepartmentDiv{
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-bottom: 1px solid lightslategray;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.deregistrationDepartmentDelete{
+  float: right;
+  margin-right: 20px;
+  visibility: hidden;
+}
+
+.communityResourcesMain{
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  height: 580px;
+  border: 8px double black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow-y: auto;
+}
+
+.communityResourcesDiv{
+  margin: auto;
+  text-align: left;
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  width: 750px;
+}
+
+.communityResourcesSpan{
+  display: inline-block;
+  width: 580px;
+  line-height: 30px;
+}
+
+.communityResourcesCheck{
+  display: inline-block;
+  height: 20px;
+  float: right;
+}
+
+.leftButton {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 14px solid rgba(164, 168, 172, 0.787);
+  border-bottom: 7px solid transparent;
+  display: inline-block;
+}
+
+.rightButton {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-left: 14px solid rgba(164, 168, 172, 0.787);
+  border-bottom: 7px solid transparent;
+  display: inline-block;
+}
+
+.changePasswordMain{
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  height: 580px;
+  border: 8px double black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow-y: auto;
+}
+.changePasswordDiv{
+  width: 500px;
+  margin: auto;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+.changePasswordinput{
+  display:inline-block;
+  appearance: none;
+  border-bottom: 2px solid black;
+  width: 400px;
+  height: 50px;
+  background-color: #fafafa;
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.changePasswordLable{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#mainPage{
+  background-color: #fafafa;
+}
+
+#name{
+  max-width: 200px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-bottom: 1px solid rgba(214, 210, 210, 0.925);
+}
+
+#searchName{
+  appearance: none;
+  width: 320px;
+  height: 40px;
+  border: 1px solid #80817d;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  margin: auto;
+}
+
+#searchTimeName{
+  appearance: none;
+  width: 320px;
+  height: 40px;
+  border: 1px solid #80817d;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 300px;
+  margin: auto;
+}
+
+#searchStatus{
+  appearance: none;
+  width: 320px;
+  height: 40px;
+  border: 1px solid #80817d;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 300px;
+  margin: auto;
+}
+
+#searchButton{
+  width: 60px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+#search{
+  display: inline-block;
+  position: absolute;
+  right: -2px;
+  top: 24%;
+  background-color: gray;;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+#searchInterviewLiPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#allMessage{
+  width: 100%;
+  min-width: 1100px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  text-align: center;
+  border-bottom: 2px dotted black;
+  padding-top: 25px;
+}
+
+#passMessage{
+  width: 100%;
+  min-width: 1100px;
+  margin: auto;
+  overflow-x: auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#searchInterviewLi{
+  position: relative;
+}
+
+#searchInterviewDiv{
+  width: 220px;
+  height: 170px;
+  line-height: 100px;
+  position: relative;
+  bottom: 100%;
+  left: 100%;
+  background-color: #e4e2e2ec;
+  border-radius: 10px;
+  display: none;
+}
+
+#searchBartch{
+  height: 30px;
+  width: 180px;
+  text-align: center;
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  outline: none;
+  margin: auto;
+}
+
+#buttonInterview{
+  background-color: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+}
+
+#applicationThawingPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#applicationThawingDiv{
+  min-width: 900px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  resize: none;
+  outline: none;
+  height: 300px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#applicationThawingButton {
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  color: grey;
+  line-height: 30px;
+}
+
+#alterHomeIntroducePage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#alterHomeIntroduceText{
+  min-width: 800px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  resize: none;
+  outline: none;
+  height: 300px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#alterHomeIntroduceButton{
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  color: grey;
+  line-height: 30px;
+}
+
+#createAccountPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#createAccountMain{
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  height: 550px;
+  border: 8px double black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#createAccountButton{
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+  border: 2px solid black;
+  width: 60px;
+  border-radius: 10px;
+}
+
+#createDepartmentPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#createDepartmentMain{
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  height: 550px;
+  border: 8px double black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
+#deregistrationDepartmentPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#communityResourcesPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#changePasswordPage{
+  min-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-left: 200px;
+}
+
+#changePasswordButton{
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+  border: 2px solid black;
+  width: 60px;
+  border-radius: 10px;
+}
+
+#applicationThawingPage > h2{
+  margin-top: 50px;
+}
+
+#alterHomeIntroducePage > h2{
+  margin-top: 50px;
+}
+
+::placeholder{
+  color: gainsboro;
+}
+
+.icon-sousuo:before {
+  content: "\e654";
+  position: absolute;
+  top: -50%;
+  right: 10%;
+}
+
+.icon-weibiaoti2010104:before {
+  content: "\e63a";
+  font-size:20px;
+  font-weight: bold;
+}
+
+.createAccountInput::placeholder{
+  font-size: 15px;
+}
+
+.deregistrationDepartmentDiv:hover .deregistrationDepartmentDelete{
+  visibility: inherit;
+}
+
+#searchInterviewLi:hover #searchInterviewDiv{
+  display: block;
+}

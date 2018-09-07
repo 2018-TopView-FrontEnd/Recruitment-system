@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="control.css">
+    <link rel="stylesheet" href="iconfont.css" type="text/css">
+  </head>
+  <body>
+    <div id="mainPage">
+      <header>
+        <div style="width:1100px;position: relative;margin: auto;text-align: center;">
+          <select id="searchName" > 
+          </select>
+          <select id="searchTimeName" style="display: none;">
+          </select>
+          <select id="searchStatus" style="display: none;">
+            <option value="0">未审核</option>
+            <option value="1">已通过</option>
+            <option value="2">未通过</option>
+          </select>
+          <div id="searchButton" style="display: none;">确定</div>
+        </div>
+      </header>
+      <aside>
+        <div id="name">
+          社团名
+        </div>
+
+        <div>
+          <div class="list"><i class="iconfont icon-liebiao"></i>面试管理</div>
+          <ul>
+            <li id="searchInterviewLi">
+              查询面试信息
+              <div id="searchInterviewDiv">
+                <input type="text"id="searchBartch" placeholder="请输入您要查询的部门名称">
+                <form id="selectionInterview" style="display:none;">
+                  <select id="InterviewSel">
+                    <option>第一轮面试</option>
+                    <option>第二轮面试</option>
+                  </select>
+                </form>
+                <div id="buttonInterview"><span>确定</span></div>
+              </div>
+            </li>
+            <li>
+              添加报名信息
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="list">
+              <i class="iconfont icon-liebiao"></i>
+              自定义设计
+          </div>
+          <ul>
+            <li>
+              社团页面设计
+            </li>
+            <li>
+              报名表设计
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="list">
+              <i class="iconfont icon-liebiao"></i>
+              申请
+          </div>
+          <ul>
+            <li>
+              申请轮播
+            </li>
+            <li id="applicationThawing">
+              申请解冻 
+            </li>
+            <li>
+              修改主页展示图片
+            </li>
+            <li id="alterHomeIntroduce">
+              修改主页社团介绍
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="list">
+              <i class="iconfont icon-liebiao"></i>
+              部门管理
+          </div>
+          <ul>
+            <li id="createDepartment">
+              创建部门
+            </li>
+            <li id="createAccount">
+              创建部门账号
+            </li>
+            <li id="deregistrationDepartment">
+              注销部门所有管理员
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="list">
+              <i class="iconfont icon-liebiao"></i>
+              社团信息
+          </div>
+          <ul>
+            <li id="communityResources">
+              查看或修改社团信息
+            </li>
+            <li id="changePassword">
+              修改密码
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+      <section>
+        <div id="searchInterviewLiPage">
+          <h2 id="nameAndTime"></h2>
+          <div id="allMessage">
+            <h3 class="status"></h3>
+            <table cellspacing="10">
+              <tr class="searchInterviewTr">
+                <th>姓名</th>
+                <th>学号</th>
+                <th>学院</th>
+                <th>专业班级</th>
+                <th>性别</th>
+                <th>电话号码</th>
+                <th>微信</th>
+                <th>宿舍</th>
+                <th>个人简介</th>
+              </tr>
+            </table>
+          </div>
+          <div class="searchInterviewPage">
+            <div class="leftButton"></div>
+            <select id="searchInterviewSelect">
+              <option>1</option>
+            </select>
+            <div class="rightButton"></div>
+
+          </div>
+          <!-- <div id="passMessage">
+            <h3>通过</h3>
+            <table cellspacing="10">
+              <tr>
+                <th>是否通过</th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>学院</th>
+                <th>专业班级</th>
+                <th>性别</th>
+                <th>电话号码</th>
+              </tr>
+              <tr>
+                <td>
+                  ✔
+                </td>
+                <td>
+                  凉凉
+                </td>
+                <td>
+                  3117002222
+                </td>
+                <td>轻工化工学院</td>
+                <td>
+                  应用化学1班
+                </td>
+                <td>
+                  男
+                </td>
+                <td>
+                  15822599772
+                </td>
+              </tr>
+            </table>
+          </div> -->
+        </div>
+
+        <div id="applicationThawingPage" style="display: none;">
+          <h2>申请解冻</h2> 
+          <textarea id="applicationThawingDiv" placeholder="请输入您申请的内容"></textarea>
+          <div id="applicationThawingButton">发送</div>
+        </div>
+        
+        <div id="alterHomeIntroducePage" style="display: none;">
+          <h2>修改部门主页介绍</h2>
+          <textarea id="alterHomeIntroduceText" placeholder="请输入修改的内容"></textarea>
+          <div id="alterHomeIntroduceButton">发送</div>
+        </div>
+
+        <div id="createDepartmentPage" style="display: none;">
+          <div id="createDepartmentMain">
+            <form class="createDepartmentForm">
+              <div class="createDepartmentDiv">
+                <label class="createDepartmentLabel">新部门名称</label><input type="text" required class="createDepartmentInput" name="name">
+              </div>
+              <div class="createDepartmentDiv">
+                <label class="createDepartmentLabel">新部门简介</label><textarea required class="createDepartmentTextarea" name="introduction"></textarea>
+              </div>
+              <div class="createDepartmentDiv">
+                <label class="createDepartmentLabel">上传新部门Logo</label><input type="image"  name="file" class="createDepartmentButton">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div id="createAccountPage" style="display: none;">
+          <div id="createAccountMain">
+            <form class="createAccountForm">
+              <div class="createAccountDiv">
+                <label class="createAccountLabel">请输入账号：</label><input type="text" pattern="/^[a-zA-Z0-9]{4,16}$/" placeholder="输入4~16位大小写字母和数字" class="createAccountInput" id="username" required autofocus>
+              </div>
+              <div class="createAccountDiv">
+                <label class="createAccountLabel">请输入密码：</label><input type="password" pattern="/^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/" placeholder="最少6位且必须包含大写和小写字母、数字、特殊字符" class="createAccountInput" id="password" required>
+              </div>
+              <div class="createAccountDiv">
+                <label class="createAccountLabel">再次确认密码:</label><input type="password" pattern="/^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/" placeholder="请再次输入密码" class="createAccountInput" id="passwordAgain" required>
+              </div>
+              <div class="createAccountDiv">
+                <select class="createAccountSelect">
+                </select>
+              </div>
+              <div id="createAccountButton">确定</div>
+            </form>
+          </div>
+        </div>
+
+        <div id="deregistrationDepartmentPage" style="display: none;">
+          <div class="deregistrationDepartmentMain">
+          
+          </div>
+        </div>
+
+        <div id="communityResourcesPage" style="display: none;">
+          <div class="communityResourcesMain">
+            <div class="communityResourcesDiv" style="margin-top: 20px;">社团名称：<span class="communityResourcesSpan communityResourcesName"></span></div> 
+            <div class="communityResourcesDiv">社团类别：<span class="communityResourcesSpan communityResourcesClass"></span></div>
+            <div class="communityResourcesDiv" style="max-width: 750;height: auto;word-break: break-all;">社团简介：<span class="communityResourcesSpan communityResourcesJianJie"></span><i class="iconfont icon-weibiaoti2010104 communityResourcesCheck"></i></div>
+            <div class="communityResourcesDiv">社团联系人：<span class="communityResourcesSpan communityResourcesPeople"></span><i class="iconfont icon-weibiaoti2010104 communityResourcesCheck"></i></div>
+            <div class="communityResourcesDiv">社团联系电话：<span class="communityResourcesSpan communityResourcesTel"></span><i class="iconfont icon-weibiaoti2010104 communityResourcesCheck"></i></div>
+            <div class="communityResourcesDiv">社团短信余额：<span class="communityResourcesSpan communityResourcesMoney">15元</span></div>
+            <div class="communityResourcesDiv" style="height: 140px;">社团Logo：<img class="communityResourcesLogo"></div>
+          </div>
+        </div>
+
+        <div id="changePasswordPage" style="display: none;">
+          <div class="changePasswordMain">
+            <div class="changePasswordDiv">
+              <label class="changePasswordLable">请输入原密码</label><input type="password" class="changePasswordinput oldPassword" checked>
+            </div>
+            <div class="changePasswordDiv">
+              <label class="changePasswordLable">请输入新密码</label><input type="password" class="changePasswordinput newPassword1" checked>
+            </div>
+            <div class="changePasswordDiv">
+              <label class="changePasswordLable">再次输入新密码</label><input type="password" class="changePasswordinput newPassword2" checked>
+            </div>
+            <div id="changePasswordButton">确定</div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script src="control.js"></script>
+  </body>
+</html>
